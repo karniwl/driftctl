@@ -1043,7 +1043,7 @@ func Test_Network_ListAllLoadBalancers(t *testing.T) {
 			tt.mocks(fakePager, mockCache)
 
 			s := &networkRepository{
-				loadbalancersClient: fakeClient,
+				loadBalancersClient: fakeClient,
 				cache:               mockCache,
 			}
 			got, err := s.ListAllLoadBalancers()
